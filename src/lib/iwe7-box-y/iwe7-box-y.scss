@@ -1,0 +1,15 @@
+:host {
+  height: var(--height);
+  width: var(--width);
+  background-color: var(--color);
+  position: relative;
+  display: inline-block;
+}
+
+.iwe7-box-y-container {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
