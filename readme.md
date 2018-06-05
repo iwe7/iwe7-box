@@ -14,6 +14,45 @@ iwe7-box-y
 | color    | 背景色 |       |
 
 
+```html
+
+<div>
+  <iwe7-box-y style="height: 30px;" color="red">
+  </iwe7-box-y>
+  <iwe7-box-y style="height: 30px;" color="green">
+  </iwe7-box-y>
+  <iwe7-box-y style="height: 30px;" color="black">
+  </iwe7-box-y>
+</div>
+
+<div>
+  <iwe7-box-y reversal style="height: 30px;" color="red">
+  </iwe7-box-y>
+  <iwe7-box-y reversal style="height: 30px;" color="green">
+  </iwe7-box-y>
+  <iwe7-box-y reversal style="height: 30px;" color="black">
+  </iwe7-box-y>
+</div>
+
+<div>
+  <iwe7-box-x style="width: 33.33%;" color="red">
+  </iwe7-box-x>
+  <iwe7-box-x style="width: 33.33%;" color="green">
+  </iwe7-box-x>
+  <iwe7-box-x style="width: 33.33%;" color="black">
+  </iwe7-box-x>
+</div>
+
+<div>
+  <iwe7-box-x reversal style="width: 33.33%;" color="black">
+  </iwe7-box-x>
+  <iwe7-box-x reversal style="width: 33.33%;" color="red">
+  </iwe7-box-x>
+  <iwe7-box-x reversal style="width: 33.33%;" color="green">
+  </iwe7-box-x>
+</div>
+```
+
 | 组件名                | 说明        | 地址                                         |
 |--------------------|-----------|--------------------------------------------|
 | iwe7-flex          | flex布局组件  | https://github.com/iwe7/iwe7-flex          |
