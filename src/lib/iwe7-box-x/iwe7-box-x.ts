@@ -15,7 +15,7 @@ export class Iwe7BoxXComponent extends BaseWithIcss {
 
     @Input() ratio: number = 0.618;
     @Input() params: number = 1;
-    _reversal: boolean = true;
+    _reversal: boolean = false;
     @Input()
     set reversal(val: any) {
         this._reversal = coerceBooleanProperty(val);
@@ -29,13 +29,13 @@ export class Iwe7BoxXComponent extends BaseWithIcss {
         this.setStyleInputs(["height", "color"]);
         this.getCyc('ngAfterContentInit').subscribe(res => {
             const ele: HTMLElement = this.ele.nativeElement;
-            const parent: HTMLElement = ele.parentElement;
-            this.width = parent.clientWidth;
+            this.width = ele.clientWidth;
             if (this.reversal) {
                 this.height = this.width * this.ratio * this.params;
             } else {
                 this.height = this.width / this.ratio * this.params;
             }
+            console.log(this.height);
             this.styleObj = {
                 height: this.height + 'px',
                 width: this.width + 'px'
